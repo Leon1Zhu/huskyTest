@@ -16,11 +16,5 @@
 #         exit 1
 # fi
 
-echo $0 
-echo $1
-echo $2
-
-
 echo "这里是自动生成的commit信息" >> $HUSKY_GIT_PARAMS
 
-# git commit --amend -m "c3"
