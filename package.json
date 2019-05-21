@@ -24,7 +24,8 @@
   ],
   "husky": {
     "hooks": {
-      "commit-msg": "sh gitConfig/prepare-commit-msg.sh $0 $1 $2"
+      "commit-msg": "sh gitConfig/prepare-commit-msg.sh $0 $1 $2",
+      "post-commit": "git push"
     }
   },
   "devDependencies": {
