@@ -16,6 +16,8 @@
 #         exit 1
 # fi
 
+export HUSKY_GIT_PARAMS="test"
+
 echo "#Some more info...." >> $HUSKY_GIT_PARAMS
 
 # git commit --amend -m "c3"
