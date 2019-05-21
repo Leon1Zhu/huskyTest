@@ -18,5 +18,3 @@
 
 echo "这里是自动生成的commit信息" >> $HUSKY_GIT_PARAMS
 
-$(git push)
-
