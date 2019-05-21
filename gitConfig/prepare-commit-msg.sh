@@ -16,7 +16,10 @@
 #         exit 1
 # fi
 
-export HUSKY_GIT_PARAMS="test"
+echo $0 
+echo $1
+echo $2
+
 
 echo "#Some more info...." >> $HUSKY_GIT_PARAMS
 
