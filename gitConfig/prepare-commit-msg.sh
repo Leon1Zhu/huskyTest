@@ -16,5 +16,5 @@
 #         exit 1
 # fi
 
-echo "这里是自动生成的commit信息" >> $HUSKY_GIT_PARAMS
+echo "这里是王达自动生成的commit信息" >> $HUSKY_GIT_PARAMS
 
