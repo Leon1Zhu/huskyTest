@@ -14,7 +14,7 @@
 # then
 #         echo "failed to apply patch, please apply it manually"
 #         exit 1
-# fi
+# ficxxsssssgdfgfgfg
 
-echo "config信息被更改" >> $HUSKY_GIT_PARAMS
+echo "信息被更改" >> $HUSKY_GIT_PARAMS
 
