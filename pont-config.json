@@ -1,0 +1,29 @@
+{
+  "outDir": "./src/services",
+  "usingMultipleOrigins": true,
+  "origins": [
+    {
+      "name": "daas",
+      "originUrl": "https://daily-daas.taobao.net/v2/api-docs"
+    },
+    {
+      "name": "featurePlatform",
+      "originUrl": "http://daily-feature.taobao.net/v2/api-docs"
+    },
+    {
+      "name": "autodm",
+      "originUrl": "https://autodm.taobao.net/v2/api-docs"
+    },
+    {
+      "name": "oneService",
+      "originUrl": "https://pre-oneservice.alibaba-inc.com/one-service/v2/api-docs"
+    },
+    {
+      "name": "gold",
+      "originUrl": "https://pre-gold.alibaba-inc.com/v2/api-docs"
+    }
+  ],
+  "templateType": "hooks",
+  "templatePath": "./pontTemplate",
+  "surrounding": "javaScript"
+}
