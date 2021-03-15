@@ -14,7 +14,7 @@
 # then
 #         echo "failed to apply patch, please apply it manually"
 #         exit 1
-# fi
+# ficxxsssssgdfgfgfg
 
-echo "这里是自动生成的commit信息" >> $HUSKY_GIT_PARAMS
+echo "信息被更改" >> $HUSKY_GIT_PARAMS
 
