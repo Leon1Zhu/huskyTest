@@ -1,5 +1,6 @@
 {
   "outDir": "./src/services",
+  "transformPath": "./transformPont",
   "usingMultipleOrigins": true,
   "origins": [
     {
