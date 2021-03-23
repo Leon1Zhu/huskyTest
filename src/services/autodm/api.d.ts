@@ -9416,6 +9416,110 @@ declare namespace API {
      */
     export namespace commonProduceConfig {
       /**
+       * 根据域、维度、取值类型查询数据维度id
+       * /autodm/common_produce/getDataSetIdByDomainAndDim
+       */
+      export namespace getDataSetIdByDomainAndDim {
+        export class Params {
+          /** dim */
+          dim: string;
+          /** domain */
+          domain: string;
+          /** valueType */
+          valueType: string;
+        }
+
+        export type HooksParams = (() => Params) | Params;
+
+        export type Response = number;
+
+        export const init: Response;
+
+        export function request(params: Params): Promise<Response>;
+
+        export function createFetchAction<Key>(
+          types: FetchTypes<Key>,
+          stateKey?: string,
+        ): (
+          params: Params,
+          meta?,
+        ) => {
+          type: Key;
+          payload?: Response;
+          params?: Params;
+          url: string;
+          types: string[];
+          meta;
+        } & Promise<Response>;
+
+        export function mutate(
+          params?: HooksParams,
+          newValue?: any,
+          shouldRevalidate = true,
+        );
+
+        export function trigger(params?: HooksParams, shouldRevalidate = true);
+
+        export function useRequest(
+          params?: HooksParams,
+          options?: ConfigInterface,
+        ): { isLoading: boolean; data: Response; error: Error };
+
+        export const method: string;
+      }
+
+      /**
+       * 查询维度维表的信息
+       * /autodm/common_produce/listDimData
+       */
+      export namespace listDimData {
+        export class Params {
+          /** dataId */
+          dataId: number;
+          /** keyWord */
+          keyWord?: string;
+        }
+
+        export type HooksParams = (() => Params) | Params;
+
+        export type Response = any;
+
+        export const init: Response;
+
+        export function request(params: Params): Promise<Response>;
+
+        export function createFetchAction<Key>(
+          types: FetchTypes<Key>,
+          stateKey?: string,
+        ): (
+          params: Params,
+          meta?,
+        ) => {
+          type: Key;
+          payload?: Response;
+          params?: Params;
+          url: string;
+          types: string[];
+          meta;
+        } & Promise<Response>;
+
+        export function mutate(
+          params?: HooksParams,
+          newValue?: any,
+          shouldRevalidate = true,
+        );
+
+        export function trigger(params?: HooksParams, shouldRevalidate = true);
+
+        export function useRequest(
+          params?: HooksParams,
+          options?: ConfigInterface,
+        ): { isLoading: boolean; data: Response; error: Error };
+
+        export const method: string;
+      }
+
+      /**
         * 获取人群优选潜客生产算法相关配置
 返回获取人群优选潜客生产算法相关配置
         * /autodm/common_produce/potential_crowds/algoConfig
@@ -11874,155 +11978,6 @@ declare namespace API {
      */
     export namespace labelTask {
       /**
-       * regularFinish
-       * /autodm/api/task/regular/finish
-       */
-      export namespace regularFinish {
-        export class Params {
-          /** instanceTaskId */
-          instanceTaskId: number;
-          /** status */
-          status?: string;
-        }
-
-        export type HooksParams = (() => Params) | Params;
-
-        export type Response = boolean;
-
-        export const init: Response;
-
-        export function request(params: Params): Promise<Response>;
-
-        export function createFetchAction<Key>(
-          types: FetchTypes<Key>,
-          stateKey?: string,
-        ): (
-          params: Params,
-          meta?,
-        ) => {
-          type: Key;
-          payload?: Response;
-          params?: Params;
-          url: string;
-          types: string[];
-          meta;
-        } & Promise<Response>;
-
-        export function mutate(
-          params?: HooksParams,
-          newValue?: any,
-          shouldRevalidate = true,
-        );
-
-        export function trigger(params?: HooksParams, shouldRevalidate = true);
-
-        export function useRequest(
-          params?: HooksParams,
-          options?: ConfigInterface,
-        ): { isLoading: boolean; data: Response; error: Error };
-
-        export const method: string;
-      }
-
-      /**
-       * getDagLog
-       * /autodm/api/task/regular/getDagLog
-       */
-      export namespace getDagLog {
-        export class Params {
-          /** dagId */
-          dagId: number;
-        }
-
-        export type HooksParams = (() => Params) | Params;
-
-        export type Response = string;
-
-        export const init: Response;
-
-        export function request(params: Params): Promise<Response>;
-
-        export function createFetchAction<Key>(
-          types: FetchTypes<Key>,
-          stateKey?: string,
-        ): (
-          params: Params,
-          meta?,
-        ) => {
-          type: Key;
-          payload?: Response;
-          params?: Params;
-          url: string;
-          types: string[];
-          meta;
-        } & Promise<Response>;
-
-        export function mutate(
-          params?: HooksParams,
-          newValue?: any,
-          shouldRevalidate = true,
-        );
-
-        export function trigger(params?: HooksParams, shouldRevalidate = true);
-
-        export function useRequest(
-          params?: HooksParams,
-          options?: ConfigInterface,
-        ): { isLoading: boolean; data: Response; error: Error };
-
-        export const method: string;
-      }
-
-      /**
-       * getNodeDependency
-       * /autodm/api/task/regular/getNodeDependency
-       */
-      export namespace getNodeDependency {
-        export class Params {
-          /** commonProduceId */
-          commonProduceId: number;
-        }
-
-        export type HooksParams = (() => Params) | Params;
-
-        export type Response = Array<string>;
-
-        export const init: Response;
-
-        export function request(params: Params): Promise<Response>;
-
-        export function createFetchAction<Key>(
-          types: FetchTypes<Key>,
-          stateKey?: string,
-        ): (
-          params: Params,
-          meta?,
-        ) => {
-          type: Key;
-          payload?: Response;
-          params?: Params;
-          url: string;
-          types: string[];
-          meta;
-        } & Promise<Response>;
-
-        export function mutate(
-          params?: HooksParams,
-          newValue?: any,
-          shouldRevalidate = true,
-        );
-
-        export function trigger(params?: HooksParams, shouldRevalidate = true);
-
-        export function useRequest(
-          params?: HooksParams,
-          options?: ConfigInterface,
-        ): { isLoading: boolean; data: Response; error: Error };
-
-        export const method: string;
-      }
-
-      /**
        * getSql
        * /autodm/api/task/regular/getSql
        */
@@ -12074,15 +12029,15 @@ declare namespace API {
       }
 
       /**
-       * regularSubmit
+       * submitRegularProduceTask
        * /autodm/api/task/regular/submit
        */
-      export namespace regularSubmit {
+      export namespace submitRegularProduceTask {
         export class Params {
           /** bizDate */
-          bizDate: string;
-          /** dagId */
-          dagId?: number;
+          bizDate?: string;
+          /** instanceTaskId */
+          instanceTaskId?: number;
           /** taskId */
           taskId: number;
         }

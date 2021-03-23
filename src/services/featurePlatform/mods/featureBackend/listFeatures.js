@@ -64,7 +64,7 @@ export function useRequest(
   return Hooks.useRequest('/featurePlatform/listFeatures', params, swrOptions);
 }
 
-export const init = new defs.FeatureDataDTO();
+export const init = new defs.featurePlatform.FeatureDataDTO();
 
 export const url = '/featurePlatform/listFeatures';
 

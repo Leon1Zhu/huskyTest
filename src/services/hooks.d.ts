@@ -15,6 +15,7 @@ export declare function useRequest(
   params?: any,
   swrOptions?: any,
   fetchOptions?: any,
+  transformData?: Function,
 ): {
   data: any;
   error: any;

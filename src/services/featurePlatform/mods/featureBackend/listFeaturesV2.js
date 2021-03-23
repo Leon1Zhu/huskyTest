@@ -68,7 +68,7 @@ export function useRequest(
   );
 }
 
-export const init = new defs.FeatureDataDTO();
+export const init = new defs.featurePlatform.FeatureDataDTO();
 
 export const url = '/featurePlatform/listFeaturesV2';
 

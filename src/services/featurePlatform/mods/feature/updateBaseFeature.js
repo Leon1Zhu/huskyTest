@@ -41,7 +41,7 @@ export function useDeprecatedRequest(
   });
 }
 
-export const init = new defs.BaseFeature();
+export const init = new defs.featurePlatform.BaseFeature();
 
 export const url = '/feature/base';
 

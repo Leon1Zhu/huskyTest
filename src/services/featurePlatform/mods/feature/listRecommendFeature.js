@@ -55,7 +55,7 @@ export function useRequest(
   return Hooks.useRequest('/feature/listRecommendFeature', params, swrOptions);
 }
 
-export const init = new defs.ListData();
+export const init = new defs.featurePlatform.ListData();
 
 export const url = '/feature/listRecommendFeature';
 

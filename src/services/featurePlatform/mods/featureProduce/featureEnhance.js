@@ -44,7 +44,7 @@ export function useDeprecatedRequest(
   );
 }
 
-export const init = new defs.AddEnhanceFeatureResult();
+export const init = new defs.featurePlatform.AddEnhanceFeatureResult();
 
 export const url = '/feature/produce/featureEnhanceAdd';
 

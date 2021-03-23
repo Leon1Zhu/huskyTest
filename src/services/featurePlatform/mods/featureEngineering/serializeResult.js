@@ -46,7 +46,7 @@ export function useRequest(
   );
 }
 
-export const init = new defs.FeatureSerializeResponse();
+export const init = new defs.featurePlatform.FeatureSerializeResponse();
 
 export const url = '/feature/engineering/serialize/result';
 

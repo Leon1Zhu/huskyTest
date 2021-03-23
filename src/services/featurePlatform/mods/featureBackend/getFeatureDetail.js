@@ -46,7 +46,7 @@ export function useRequest(
   );
 }
 
-export const init = new defs.FeatureResponse();
+export const init = new defs.featurePlatform.FeatureResponse();
 
 export const url = '/featurePlatform/getFeatureDetail.json';
 

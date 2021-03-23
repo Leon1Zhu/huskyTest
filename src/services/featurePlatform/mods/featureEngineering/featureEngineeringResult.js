@@ -42,7 +42,7 @@ export function useRequest(
   return Hooks.useRequest('/feature/engineering/result', params, swrOptions);
 }
 
-export const init = new defs.FeatureEngineeringResponse();
+export const init = new defs.featurePlatform.FeatureEngineeringResponse();
 
 export const url = '/feature/engineering/result';
 

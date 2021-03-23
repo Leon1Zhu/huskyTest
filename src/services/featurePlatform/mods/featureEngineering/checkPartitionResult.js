@@ -46,7 +46,7 @@ export function useRequest(
   );
 }
 
-export const init = new defs.CheckPartitionResponse();
+export const init = new defs.featurePlatform.CheckPartitionResponse();
 
 export const url = '/feature/engineering/checkPartitionResult';
 

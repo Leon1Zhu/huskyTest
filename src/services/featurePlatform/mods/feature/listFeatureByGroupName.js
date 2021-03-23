@@ -50,7 +50,7 @@ export function useRequest(
   );
 }
 
-export const init = new defs.AalgorithmFeatureResponseV2();
+export const init = new defs.featurePlatform.AalgorithmFeatureResponseV2();
 
 export const url = '/feature/listFeatureByGroupName';
 

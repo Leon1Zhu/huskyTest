@@ -41,7 +41,7 @@ export function useDeprecatedRequest(
   });
 }
 
-export const init = new defs.FeatureResponse();
+export const init = new defs.featurePlatform.FeatureResponse();
 
 export const url = '/feature/importFeature';
 

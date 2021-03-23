@@ -48,7 +48,7 @@ export function useRequest(
   return Hooks.useRequest('/feature/listFeatureGroup', params, swrOptions);
 }
 
-export const init = new defs.FeatureGroupResponse();
+export const init = new defs.featurePlatform.FeatureGroupResponse();
 
 export const url = '/feature/listFeatureGroup';
 

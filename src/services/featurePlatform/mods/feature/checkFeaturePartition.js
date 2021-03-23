@@ -44,7 +44,7 @@ export function useDeprecatedRequest(
   );
 }
 
-export const init = new defs.CheckFeaturePartitionResponseVO();
+export const init = new defs.featurePlatform.CheckFeaturePartitionResponseVO();
 
 export const url = '/feature/checkFeaturePartition';
 

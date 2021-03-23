@@ -61,7 +61,7 @@ exports.SWRProvider = function(props) {
  * @param params 请求参数
  * @param options 配置信息
  */
-function useRequest(url, params, swrOptions, fetchOptions) {
+function useRequest(url, params, swrOptions, fetchOptions, transformData) {
   if (params === void 0) {
     params = {};
   }
@@ -85,7 +85,7 @@ function useRequest(url, params, swrOptions, fetchOptions) {
     isValidating = _b.isValidating,
     mutate = _b.mutate;
   return {
-    data: data,
+    data: transformData ? transformData(data) : data,
     error: error,
     mutate: mutate,
     isLoading: data === undefined || isValidating,
