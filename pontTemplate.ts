@@ -122,7 +122,7 @@ export default class MyGenerator extends CodeGenerator {
       `
       }
 
-    export const init = ${inter.response.getInitialValue(false)};
+    export const init = ${inter.response.getInitialValue(true)};
 
     export const url = '${inter.path}';
 
